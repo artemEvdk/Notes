@@ -1,0 +1,9 @@
+.note-title {
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+}
+
+.note-date {
+    -fx-text-fill: #454242;
+
+}

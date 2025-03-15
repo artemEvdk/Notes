@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.notesapp.controllers.MainController">
+
+    <center>
+        <ListView fx:id="notesListView" />
+    </center>
+
+    <bottom>
+        <VBox spacing="10">
+            <TextField fx:id="titleField" promptText="Заголовок" />
+            <TextArea fx:id="contentArea" promptText="Содержание" />
+            <Button text="Сохранить" onAction="#handleSave" />
+        </VBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.notesapp.controllers.EditNoteController">
+
+    <headerText>
+        Редактирование заметки
+    </headerText>
+
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Заголовок:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="titleField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+            <Label text="Содержание:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextArea fx:id="contentArea" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        </GridPane>
+    </content>
+
+    <buttonTypes>
+        <ButtonType text="Сохранить" buttonData="OK_DONE" />
+        <ButtonType text="Отмена" buttonData="CANCEL_CLOSE" />
+    </buttonTypes>
+</DialogPane>
